@@ -28,7 +28,7 @@ const Contact = () => {
                     />
                     <ImageClipBox 
                         clipClass="sword-man-clip-path md:scale-125"
-                        src="img/swordman.webp"
+                        src="img/profile.png"
                     />
                 </div>
                 <div className = "flex flex-col items-center text-center">

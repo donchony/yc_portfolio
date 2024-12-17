@@ -6,7 +6,7 @@ import AnimatedTitle from './AnimatedTitle';
 
 gsap.registerPlugin(ScrollTrigger)
 
-const About = () => {
+const About = ({ id = "about" }) => {
     useGSAP(() => {
         const clipAnimation = gsap.timeline({
             scrollTrigger: {
@@ -27,7 +27,7 @@ const About = () => {
     })
 
     return (
-        <div id="about" className="min-h-screen w-screen">
+        <div id={id} className="min-h-screen w-screen">
             <div className = "relative mb-8 mt-36 flex flex-col items-center gap-5">
                 <h2 className = "font-general text-sm uppercase md:text-[10px]">
                     About Me
@@ -37,10 +37,10 @@ const About = () => {
                 
                 <div className= "about-subtext">
                 <p>
-                Most recent works feature real-time audiovisual installation, 
+                Most recent works feature real-time audiovisual projection mapping, augmented reality (AR), AI-generated art,
                 </p>
                 <p>
-                augmented reality (AR), AI-generated art, physical computing, user experience design, and product design.
+                physical computing, user experience design, and product design.
                 </p>
                 </div>
             </div>

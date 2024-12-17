@@ -1,25 +1,21 @@
 import React from 'react'
-import Hero from './components/Hero'
-import About from './components/About'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Features from './components/Features'
-import Project from './components/Project'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import HomePage from './components/Homepage'
+import Works from './components/Works'
 
 
 const App = () => {
   return (
-    <main className = "relative min-h-screen w-screen overflow-x-hidden">
-      <Navbar /> 
-      <Hero />
-      <About />
-      <Features />
-      <Project />
-      <Contact />
-      <Footer />
-    </main>
-  )
-}
-
-export default App
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/works" element={<Works />} />
+          {/* Add more routes as needed */}
+        </Routes>
+      </>
+    )
+  }
+  
+  export default App
