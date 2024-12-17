@@ -1,4 +1,4 @@
-# Don Chony's Portfolio 🚀
+# Don Cho's Portfolio 🚀
 
 Welcome to my portfolio project! This website showcases my works, creativity, and expertise as a creative technologist and designer.  
 
